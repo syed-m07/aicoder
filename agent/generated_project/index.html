@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorfulTodo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>ColorfulTodo</h1>
+    </header>
+    <section class="task-input-section">
+        <form id="new-task-form" autocomplete="off">
+            <input type="text" id="new-task-input" placeholder="What needs to be done?" required />
+            <button type="submit" id="add-task-button">Add</button>
+        </form>
+    </section>
+    <section class="task-list-section">
+        <ul id="task-list" class="task-list"></ul>
+    </section>
+    <footer class="app-footer">
+        <div class="filters" id="filters">
+            <button data-filter="all" class="filter-button active">All</button>
+            <button data-filter="active" class="filter-button">Active</button>
+            <button data-filter="completed" class="filter-button">Completed</button>
+        </div>
+        <div class="theme-selector" id="theme-selector">
+            <label for="theme-select">Theme:</label>
+            <select id="theme-select">
+                <option value="pastel" selected>Pastel</option>
+                <option value="dark">Dark</option>
+                <option value="bright">Bright</option>
+            </select>
+        </div>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
